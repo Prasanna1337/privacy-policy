@@ -1,110 +1,198 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - Settlo</title>
-    <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            line-height: 1.6;
-            color: #334155;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 40px 20px;
-            background-color: #f8fafc;
-        }
-        .container {
-            background: white;
-            padding: 40px;
-            border-radius: 12px;
-            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-        }
-        h1 {
-            color: #0f172a;
-            font-size: 2.25rem;
-            margin-top: 0;
-            border-bottom: 2px solid #e2e8f0;
-            padding-bottom: 10px;
-        }
-        h2 {
-            color: #1e293b;
-            font-size: 1.5rem;
-            margin-top: 30px;
-        }
-        p, li {
-            font-size: 1rem;
-            color: #475569;
-        }
-        ul {
-            padding-left: 20px;
-        }
-        .footer {
-            margin-top: 40px;
-            text-align: center;
-            font-size: 0.875rem;
-            color: #94a3b8;
-            border-top: 1px solid #e2e8f0;
-            padding-top: 20px;
-        }
-    </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Settlo Privacy Policy</title>
+<meta name="description" content="How Settlo collects, uses, shares and deletes your data.">
+<style>
+  :root {
+    --bg: #ffffff; --text: #1b1f24; --muted: #57606a; --line: #e3e6ea;
+    --accent: #208AEF; --card: #f6f8fa;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #0f1419; --text: #e6e8eb; --muted: #9aa4af; --line: #2a3139; --accent: #5aaeff; --card: #161c22; }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  main { max-width: 760px; margin: 0 auto; padding: 40px 16px 64px; }
+  h1 { font-size: 2rem; margin: 0 0 4px; }
+  h2 { font-size: 1.3rem; margin: 40px 0 8px; padding-top: 8px; border-top: 1px solid var(--line); }
+  h3 { font-size: 1.05rem; margin: 24px 0 4px; }
+  p, li { color: var(--text); }
+  .meta { color: var(--muted); margin: 0 0 24px; }
+  a { color: var(--accent); }
+  ul { padding-left: 22px; }
+  li { margin: 4px 0; }
+  table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 0.95rem; }
+  th, td { text-align: left; vertical-align: top; padding: 8px 10px; border-bottom: 1px solid var(--line); }
+  th { color: var(--muted); font-weight: 600; }
+  .box { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 16px 18px; margin: 16px 0; }
+  .box p { margin: 6px 0; }
+  nav ol { columns: 2; column-gap: 32px; padding-left: 20px; margin: 8px 0 0; }
+  @media (max-width: 560px) { nav ol { columns: 1; } table { font-size: 0.9rem; } th, td { padding: 6px; } }
+</style>
 </head>
 <body>
-    <div class="container">
-        <h1>Privacy Policy</h1>
-        <p><strong>Last Updated: August 14, 2026</strong></p>
-        
-        <p>Your privacy is important to us. This Privacy Policy explains how Settlo ("we", "our", or "us") collects, uses, and protects your information when you use our mobile application.</p>
+<main>
 
-        <h2>1. Information We Collect</h2>
-        <p>To provide a functional group expense tracking experience, we collect the following information:</p>
-        <ul>
-            <li><strong>Account Information:</strong> Your name, email address, and profile photo when you register via Firebase Authentication.</li>
-            <li><strong>Trip & Expense Data:</strong> Group names, member names, expense amounts, currencies, description of expenses, and dates stored in Firebase Firestore to calculate split costs.</li>
-        </ul>
+<h1>Settlo Privacy Policy</h1>
+<p class="meta">Effective date: October 11, 2026</p>
 
-        <h2>2. How We Use Your Information</h2>
-        <p>We use the collected information for the following purposes:</p>
-        <ul>
-            <li>To facilitate group creation, expense splitting, and settling debts.</li>
-            <li>To authenticate your identity and secure your group database.</li>
-            <li>To display your profile details to other members of the groups you join.</li>
-        </ul>
+<p>Settlo is an app for splitting trip, flatmate and group expenses. It is available on Android, as a web app, and (where offered) on iOS. Settlo is developed and operated by Prasanna, an independent developer based in India ("we", "us"). This policy explains what information Settlo collects, why, who it is shared with, and how you can delete it.</p>
 
-        <h2>3. Data Storage and Security</h2>
-        <p>All data is securely stored and managed using Google Firebase Services (Firebase Authentication and Cloud Firestore). We implement standard security rules to prevent unauthorized access, but please note that no method of transmission over the internet is 100% secure.</p>
+<div class="box">
+  <p><strong>In short</strong></p>
+  <p>We collect only what Settlo needs to work: your account details and the groups and expenses you create. We do not sell your data, show ads, or use analytics or advertising trackers. You can delete your account at any time from inside the app.</p>
+</div>
 
-        <h2>4. Third-Party Services</h2>
-        <p>We use Google Firebase to power the backend database, authentication, and cloud storage. Firebase governs its own data storage policies in compliance with global standards.</p>
+<nav>
+  <strong>Contents</strong>
+  <ol>
+    <li><a href="#collect">Information we collect</a></li>
+    <li><a href="#use">How we use it</a></li>
+    <li><a href="#visible">What other people can see</a></li>
+    <li><a href="#sharing">Service providers we share with</a></li>
+    <li><a href="#storage">Where data is stored and how it is protected</a></li>
+    <li><a href="#retention">How long we keep data</a></li>
+    <li><a href="#delete-account">Deleting your account</a></li>
+    <li><a href="#rights">Your rights</a></li>
+    <li><a href="#children">Children</a></li>
+    <li><a href="#permissions">Device permissions</a></li>
+    <li><a href="#changes">Changes to this policy</a></li>
+    <li><a href="#contact">Contact and grievances</a></li>
+  </ol>
+</nav>
 
-        <h2>5. Account & Data Deletion Policy</h2>
-        <p>In compliance with Google Play and App Store requirements, you have full control over your data. You may request the deletion of your account or specific data (such as trips, expenses, or profile information) at any time.</p>
-        
-        <h3>How to Request Data Deletion:</h3>
-        <ul>
-            <li><strong>Method 1 (In-App):</strong> You can manually delete any trips or expenses you have created directly within the Settlo app user interface.</li>
-            <li><strong>Method 2 (Email Request):</strong> To request complete account deletion or removal of specific data, email us at <strong>settlo.help@gmail.com</strong> with the subject line <em>"Data Deletion Request"</em> from the email address associated with your account.</li>
-        </ul>
+<h2 id="collect">1. Information we collect</h2>
 
-        <h3>What Data is Deleted or Kept:</h3>
-        <ul>
-            <li><strong>Deleted Data:</strong> Upon a deletion request, we will permanently delete your profile information, authentication records, and any trips or expenses where you are the sole owner, within 30 days.</li>
-            <li><strong>Retained Data:</strong> If you participated in a shared group trip, your name and expense amounts may be retained in that specific trip's history so that other group members' balances remain mathematically correct. This shared ledger data is kept indefinitely unless the entire group is deleted.</li>
-        </ul>
+<h3>Information you give us</h3>
+<ul>
+  <li><strong>Account details:</strong> your name, email address, password (handled by Firebase Authentication; we never see it in plain text), username, and optionally your phone number and profile photo. If you sign in with Google, we receive your name, email address and profile photo from your Google account.</li>
+  <li><strong>Preferences:</strong> your default currency and app settings.</li>
+  <li><strong>Groups:</strong> group names, descriptions, currency, budgets, cover photos, and the list of members.</li>
+  <li><strong>Expenses and payments:</strong> amounts, descriptions, categories, dates, who paid, how each expense is split, recurring expense schedules, settlements between members, and the history of edits to an expense.</li>
+  <li><strong>Content you add to expenses:</strong> comments, reactions and receipt photos.</li>
+  <li><strong>Information about other people:</strong> when you add someone to a group as a guest, you provide their name. When you invite someone, you provide their email address, username or phone number so we can find their Settlo account. Please only add people who are happy to be included.</li>
+</ul>
 
-        <h2>6. Children's Privacy</h2>
-        <p>Settlo does not knowingly collect personal information from children under the age of 13. If you believe we have accidentally collected such information, please contact us immediately to have it deleted.</p>
+<h3>Information collected automatically</h3>
+<ul>
+  <li><strong>Push notification token:</strong> if you allow notifications, your device's push token, so we can send you alerts.</li>
+  <li><strong>App version and platform</strong> (for example "1.7.1, Android" or "web"), so we can ask you to update when an old version stops working.</li>
+  <li><strong>Technical data needed to run the service:</strong> like any online service, our providers (listed in section 4) process your IP address and basic request information when the app connects to them.</li>
+</ul>
 
-        <h2>7. Changes to This Privacy Policy</h2>
-        <p>We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last Updated" date.</p>
+<p>We do <strong>not</strong> collect your location, contacts, call logs, SMS, browsing history or advertising identifiers, and we do not use analytics, crash-reporting or advertising SDKs.</p>
 
-        <h2>8. Contact Us</h2>
-        <p>If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact us at:</p>
-        <p>✉️ Support Email: <strong>settlo.help@gmail.com</strong></p>
+<h2 id="use">2. How we use your information</h2>
+<ul>
+  <li>To create and secure your account and sign you in.</li>
+  <li>To run Settlo's features: groups, expense splitting, balances, settlements, budgets, recurring expenses, reports and summaries.</li>
+  <li>To let you find and invite other Settlo users, and let them find and invite you.</li>
+  <li>To send in-app and push notifications about activity in your groups, such as new expenses, payments, invitations and reminders.</li>
+  <li>To provide support when you contact us, fix problems with your account (for example, if you lose access to it), and keep Settlo secure and working.</li>
+  <li>To comply with legal obligations.</li>
+</ul>
+<p>We do not sell your personal data, use it for advertising, or use it to build profiles for any purpose unrelated to Settlo.</p>
 
-        <div class="footer">
-            <p>&copy; 2026 Settlo App. All rights reserved.</p>
-        </div>
-    </div>
+<h2 id="visible">3. What other people can see</h2>
+<ul>
+  <li><strong>Members of your groups</strong> can see your name, username, profile photo and email address, and everything in the groups you share: expenses, splits, balances, settlements, comments, reactions and receipt photos.</li>
+  <li><strong>Other Settlo users</strong> can find your account only by entering your exact email address, username or phone number. They then see your name, username and profile photo, so they can invite you. Settlo has no public directory and no browsing of other users.</li>
+  <li>If you <strong>share a report or summary</strong> (for example, a PDF or a WhatsApp message), it goes wherever you send it. Reports are created on your device.</li>
+</ul>
+
+<h2 id="sharing">4. Service providers we share with</h2>
+<p>We share data only with the service providers that run Settlo, only for that purpose:</p>
+<table>
+  <thead><tr><th>Provider</th><th>What it does</th><th>Data involved</th></tr></thead>
+  <tbody>
+    <tr><td>Google Firebase (Authentication, Cloud Firestore, Cloud Storage, Cloud Functions)</td><td>Accounts, database, file storage and server logic</td><td>All the data described in section 1</td></tr>
+    <tr><td>Google Sign-In</td><td>Optional sign-in with your Google account</td><td>Name, email, profile photo</td></tr>
+    <tr><td>Expo Push Notification Service (Expo / 650 Industries)</td><td>Delivers push notifications to your device (through Firebase Cloud Messaging on Android and Apple Push Notification service on iOS)</td><td>Push token and the notification text, such as "Asha added Dinner ₹1,200"</td></tr>
+    <tr><td>Frankfurter (api.frankfurter.app)</td><td>Currency exchange rates for display conversions</td><td>Only a request for exchange rates. No personal data is sent, but the service sees your IP address</td></tr>
+    <tr><td>Cloudflare Pages</td><td>Hosts the Settlo web app and invite links</td><td>IP address and standard web request data</td></tr>
+  </tbody>
+</table>
+<p>We may also disclose information if required by law, or to protect the rights, safety or property of Settlo, our users or others. We will not otherwise share your personal data with third parties.</p>
+
+<h2 id="storage">5. Where data is stored and how it is protected</h2>
+<ul>
+  <li>Settlo's database runs on Google Cloud in <strong>Mumbai, India (asia-south1)</strong>. Some Google and Expo services, such as sign-in and push delivery, may process data in other countries.</li>
+  <li>All data is <strong>encrypted in transit</strong> (HTTPS/TLS) and encrypted at rest by Google.</li>
+  <li>Access is restricted by security rules: you can read only your own profile and the groups you belong to. Changes that affect other people, like membership and balances, are checked on our servers.</li>
+  <li>No system is perfectly secure. If a data breach affects you, we will notify you and the authorities as required by law.</li>
+</ul>
+
+<h2 id="retention">6. How long we keep data</h2>
+<ul>
+  <li><strong>Account and profile data:</strong> until you delete your account.</li>
+  <li><strong>Groups, expenses and settlements:</strong> until the group is deleted. These records are shared with the other members, so they stay while the group exists, even if you leave it or delete your account (see section 7).</li>
+  <li><strong>Notifications:</strong> automatically deleted after about 60 days.</li>
+  <li><strong>Backups:</strong> we may keep backup copies of the database to recover from failures. Deleted data is removed from backups as they are replaced, within 90 days.</li>
+</ul>
+
+<h2 id="delete-account">7. Deleting your account</h2>
+
+<h3>In the app (immediate)</h3>
+<ol>
+  <li>Open Settlo and go to the <strong>Profile</strong> tab.</li>
+  <li>Tap <strong>Delete Account</strong> and confirm.</li>
+</ol>
+<p>Your account is deleted straight away. This works in the Android app and the web app.</p>
+
+<h3>By email</h3>
+<p>If you can't sign in, email <a href="mailto:settlo.help@gmail.com?subject=Delete%20my%20Settlo%20account">settlo.help@gmail.com</a> from the email address on your account, with the subject "Delete my Settlo account". We will verify the request and delete your account within 30 days.</p>
+
+<h3>What is deleted</h3>
+<ul>
+  <li>Your profile: name, email address, username, phone number, profile photo and push tokens.</li>
+  <li>Your sign-in account.</li>
+  <li>Your notifications and invitations.</li>
+  <li>Any group where you are the only registered member, with all its expenses, settlements and photos.</li>
+</ul>
+
+<h3>What is kept</h3>
+<p>In groups shared with other people, expenses and settlements you were part of stay, so the other members' balances remain correct. In those groups your name is shown as "<em>Your Name (deleted)</em>", and your email and photo are removed. To remove these records too, ask the group's admin to delete the group, or contact us.</p>
+
+<h3>Deleting other data without deleting your account</h3>
+<p>You can delete expenses you created, groups you own, your profile photo, and receipt photos at any time in the app.</p>
+
+<h2 id="rights">8. Your rights</h2>
+<p>Under India's Digital Personal Data Protection Act, 2023, and similar laws elsewhere, you can:</p>
+<ul>
+  <li><strong>Access</strong> a summary of the personal data we hold about you.</li>
+  <li><strong>Correct or update</strong> it. Most details can be edited in the app's Profile tab.</li>
+  <li><strong>Erase</strong> it, as described in section 7.</li>
+  <li><strong>Withdraw consent</strong> at any time by deleting your account. You can turn off push notifications in your device settings.</li>
+  <li><strong>Raise a grievance</strong> with us (section 12), and if you are not satisfied with our response, with the Data Protection Board of India.</li>
+  <li><strong>Nominate</strong> someone to exercise these rights on your behalf if you die or become unable to.</li>
+</ul>
+<p>To make a request, email us from the address on your account. We will respond within 30 days.</p>
+
+<h2 id="children">9. Children</h2>
+<p>Settlo is not directed at children under 13, and we do not knowingly collect data from them. If you are under 18, please use Settlo only with the consent of a parent or guardian. If you believe a child has given us personal data, contact us and we will delete it.</p>
+
+<h2 id="permissions">10. Device permissions</h2>
+<ul>
+  <li><strong>Notifications:</strong> to show alerts about your groups. Optional.</li>
+  <li><strong>Photos and camera:</strong> only when you choose a profile photo, group cover or receipt. Only the photo you pick is uploaded; Settlo does not access the rest of your photo library.</li>
+  <li><strong>Internet:</strong> to sync your data.</li>
+</ul>
+
+<h2 id="changes">11. Changes to this policy</h2>
+<p>We may update this policy as Settlo changes. We will post the new version on this page and update the effective date. If the changes are significant, we will also tell you in the app before they take effect.</p>
+
+<h2 id="contact">12. Contact and grievances</h2>
+<p>For questions, data requests or complaints, contact our grievance contact:</p>
+<p>Prasanna, Settlo<br>
+Email: <a href="mailto:settlo.help@gmail.com">settlo.help@gmail.com</a></p>
+<p>We aim to reply within 7 days and resolve grievances within 30 days.</p>
+
+</main>
 </body>
 </html>
